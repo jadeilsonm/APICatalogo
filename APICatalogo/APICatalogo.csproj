@@ -21,10 +21,38 @@
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+      <Content Include="APICatalogo.csproj.user" />
+      <Content Include="bin\Debug\net7.0\APICatalogo.deps.json" />
+      <Content Include="bin\Debug\net7.0\APICatalogo.dll" />
+      <Content Include="bin\Debug\net7.0\APICatalogo.exe" />
+      <Content Include="bin\Debug\net7.0\APICatalogo.pdb" />
+      <Content Include="bin\Debug\net7.0\APICatalogo.runtimeconfig.json" />
+      <Content Include="bin\Debug\net7.0\appsettings.Development.json" />
+      <Content Include="bin\Debug\net7.0\appsettings.json" />
+      <Content Include="bin\Debug\net7.0\Humanizer.dll" />
+      <Content Include="bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll" />
+      <Content Include="bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+      <Content Include="bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll" />
+      <Content Include="bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll" />
+      <Content Include="bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+      <Content Include="bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll" />
+      <Content Include="bin\Debug\net7.0\Microsoft.OpenApi.dll" />
+      <Content Include="bin\Debug\net7.0\Mono.TextTemplating.dll" />
+      <Content Include="bin\Debug\net7.0\MySqlConnector.dll" />
+      <Content Include="bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll" />
+      <Content Include="bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll" />
+      <Content Include="bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+      <Content Include="bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+      <Content Include="bin\Debug\net7.0\System.CodeDom.dll" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Controllers\Build.cs" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Controllers" />
+      <Folder Include="Migrations" />
     </ItemGroup>
 
 </Project>
