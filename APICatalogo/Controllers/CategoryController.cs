@@ -24,8 +24,20 @@ public class CategoryController : ControllerBase
         {
             return NotFound();
         }
+        // take limite de resultado para melhoria no desempenho para as cosultas do banco de dados.
+        return await _context.Categories.Take(10).AsNoTracking().ToListAsync(); // evitar sobrecarga devido ao rastreio para cache do framework
+    }
+    
+    // GET: api/Category/products
+    [HttpGet("products")]
+    public async Task<ActionResult<IEnumerable<Category>>> GetCategoriesAndPRoducts()
+    {
+        if (_context.Categories == null)
+        {
+            return NotFound();
+        }
 
-        return await _context.Categories.ToListAsync();
+        return await _context.Categories.Include(p => p.Products).ToListAsync();
     }
 
     // GET: api/Category/5
